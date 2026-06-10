@@ -60,8 +60,11 @@ abstract class GamesServicesPlatform extends PlatformInterface {
 
   /// Open the device's default leaderboards screen. If a leaderboard ID is provided,
   /// it will display the specific leaderboard, otherwise it will show the list of all leaderboards.
-  Future<String?> showLeaderboards(
-      {iOSLeaderboardID = "", androidLeaderboardID = ""}) async {
+  Future<String?> showLeaderboards({
+    String iOSLeaderboardID = "",
+    String androidLeaderboardID = "",
+    TimeScope timeScope = TimeScope.allTime,
+  }) async {
     throw UnimplementedError("not implemented.");
   }
 
